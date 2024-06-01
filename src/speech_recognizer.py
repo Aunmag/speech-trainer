@@ -39,7 +39,7 @@ class SpeechRecognizer:
         try:
             with sd.RawInputStream(
                 samplerate=self.sample_rate,
-                blocksize=8000,
+                blocksize=1000,
                 device=self.device,
                 dtype="int16",
                 latency="low",
